@@ -27,13 +27,14 @@ function Comment({ comment }) {
   return (
     <div className="comment">
       <div className="comment__left">
-        <img src={comment.userPhoto} alt=""></img>
+        <img className="comment__image" src={comment.userPhoto} alt=""></img>
       </div>
       <div className="comment__right">
         <div className="comment__author-data">
-          <b>{comment.userName}</b>
-          <div>{comment.userGroup}</div>
-          <div>{comment.time}</div>
+          <div className="comment__username">{comment.userName}</div>
+          <div className="comment__user-group">{comment.userGroup}</div>
+          <div className="comment__middle-dot">&middot;</div>
+          <div className="comment__time">{comment.time}</div>
         </div>
         <p className="comment__message">{comment.message}</p>
         <div className="comment__actions">

@@ -1,6 +1,7 @@
 import React from "react";
 import Comments from "./comments/Comments";
 import { data } from "./comments/data";
+import "./app.scss";
 
 function App() {
   return (

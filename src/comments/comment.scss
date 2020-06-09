@@ -1,3 +1,55 @@
+@import "../app.scss";
+
 .comment {
   display: flex;
+  border: 3px solid #efefef;
+  padding: 35px 20px 20px;
+}
+
+.comment__left {
+  width: 10%;
+  .comment__image {
+    width: 70%;
+    border-radius: 50%;
+  }
+}
+
+.comment__right {
+  width: 90%;
+  .comment__author-data {
+    display: flex;
+    align-items: center;
+    .comment__username,
+    .comment__user-group,
+    .comment__middle-dot {
+      margin-right: 10px;
+    }
+    .comment__username {
+      font-weight: bold;
+    }
+    .comment__user-group {
+      display: flex;
+      justify-content: center;
+      font-weight: bold;
+      align-items: center;
+      text-transform: uppercase;
+      width: 6em;
+      height: 1.5em;
+      background-color: $black;
+      color: white;
+      border-radius: 15px;
+      font-weight: 500;
+      font-size: 0.8em;
+    }
+    .comment__middle-dot,
+    .comment__time {
+      color: grey;
+      font-size: 0.8em;
+    }
+  }
+
+  .comment__message {
+    width: 100%;
+    margin: 10px 0 5px;
+  }
 }
