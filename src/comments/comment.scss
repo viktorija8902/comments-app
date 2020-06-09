@@ -59,6 +59,7 @@
   .comment__actions {
     display: flex;
     opacity: 45%;
+    flex-wrap: wrap;
   }
 }
 .comment:hover {

@@ -47,7 +47,7 @@ function Comment({ comment }) {
             <Button label="Reply" onClick={handleReplyClick} />
             <ButtonWithData
               data={comment.numberOfReplies}
-              label={"replies"}
+              label={"Replies"}
               onClick={handleRepliesClick}
             />
             <VoteCounter
@@ -60,7 +60,9 @@ function Comment({ comment }) {
         </div>
       </div>
       {replyBoxVisible && <div className="comment__reply">Reply here</div>}
-      {repliesVisible && <div className="comment__replies">Replies</div>}
+      {repliesVisible && (
+        <div className="comment__replies">Replies visible here</div>
+      )}
     </Fragment>
   );
 }
