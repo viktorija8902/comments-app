@@ -2,9 +2,9 @@ import React from "react";
 import { shallow } from "enzyme";
 import sinon from "sinon";
 import Comment from "./Comment";
-import Button from "../common/Button";
-import ButtonWithData from "../common/ButtonWithData";
-import * as utils from "./utils";
+import Button from "../../common/button/Button";
+import ButtonWithData from "../../common/buttonWithData/ButtonWithData";
+import * as utils from "../utils";
 
 describe("<Comment /> tests", () => {
   const comment = {

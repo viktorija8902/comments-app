@@ -1,7 +1,7 @@
 import React from "react";
 import { shallow } from "enzyme";
 import Comments from "./Comments";
-import Comment from "./Comment";
+import Comment from "../comment/Comment";
 
 describe("<Comments /> tests", () => {
   it("renders Comment components with correct props", () => {

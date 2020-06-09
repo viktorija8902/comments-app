@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import ButtonWithImage from "./ButtonWithImage";
+import ButtonWithImage from "./buttonWithImage/ButtonWithImage";
 import arrowUp from "../images/arrowUp.png";
 import arrowDown from "../images/arrowDown.png";
 

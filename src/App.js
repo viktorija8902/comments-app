@@ -1,5 +1,5 @@
 import React from "react";
-import Comments from "./comments/Comments";
+import Comments from "./comments/commentList/Comments";
 import { data } from "./comments/data";
 import "./app.scss";
 

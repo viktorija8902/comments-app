@@ -1,9 +1,9 @@
 import React, { Fragment, useState } from "react";
-import VoteCounter from "../common/VoteCounter";
-import ButtonWithData from "../common/ButtonWithData";
-import Button from "../common/Button";
+import VoteCounter from "../../common/VoteCounter";
+import ButtonWithData from "../../common/buttonWithData/ButtonWithData";
+import Button from "../../common/button/Button";
 import "./comment.scss";
-import { getTime } from "./utils";
+import { getTime } from "../utils";
 
 function Comment({ comment }) {
   const [upvotes, upvote] = useState(comment.numberOfUpvotes);
