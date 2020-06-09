@@ -57,9 +57,14 @@
 
   .comment__actions {
     display: flex;
+    opacity: 45%;
   }
 }
-
+.comment:hover {
+  .comment__actions {
+    opacity: 100%;
+  }
+}
 @media (max-width: 650px) {
   .comment {
     display: block;

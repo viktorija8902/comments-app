@@ -9,13 +9,13 @@ function VoteCounter({ likes, dislikes, onUpvote, downUpvote }) {
       <ButtonWithImage
         onClick={onUpvote}
         image={arrowUp}
-        imageAlt={`${likes} people liked this comment. Click to like.`}
+        alt={`${likes} people liked this comment. Click to like.`}
         label={likes}
       />
       <ButtonWithImage
         onClick={downUpvote}
         image={arrowDown}
-        imageAlt={`${dislikes} people disliked this comment. Click to dislike.`}
+        alt={`${dislikes} people disliked this comment. Click to dislike.`}
         label={dislikes}
       />
     </Fragment>
