@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import VoteCounter from "../common/VoteCounter";
 import ButtonWithData from "../common/ButtonWithData";
 import Button from "../common/Button";
+import "./comment.scss";
 
 function Comment({ comment }) {
   const [upvotes, upvote] = useState(comment.numberOfUpvotes);
@@ -26,7 +27,7 @@ function Comment({ comment }) {
   return (
     <div className="comment">
       <div className="comment__left">
-        <img alt=""></img>
+        <img src={comment.userPhoto} alt=""></img>
       </div>
       <div className="comment__right">
         <div className="comment__author-data">
