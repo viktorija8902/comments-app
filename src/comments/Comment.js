@@ -3,6 +3,7 @@ import VoteCounter from "../common/VoteCounter";
 import ButtonWithData from "../common/ButtonWithData";
 import Button from "../common/Button";
 import "./comment.scss";
+import { getTime } from "./utils";
 
 function Comment({ comment }) {
   const [upvotes, upvote] = useState(comment.numberOfUpvotes);
@@ -34,7 +35,7 @@ function Comment({ comment }) {
           <div className="comment__username">{comment.userName}</div>
           <div className="comment__user-group">{comment.userGroup}</div>
           <div className="comment__middle-dot">&middot;</div>
-          <div className="comment__time">{comment.time}</div>
+          <div className="comment__time">{getTime(comment.time)}</div>
         </div>
         <p className="comment__message">{comment.message}</p>
         <div className="comment__actions">
