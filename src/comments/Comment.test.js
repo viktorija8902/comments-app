@@ -1,8 +1,10 @@
 import React from "react";
 import { shallow } from "enzyme";
+import sinon from "sinon";
 import Comment from "./Comment";
 import Button from "../common/Button";
 import ButtonWithData from "../common/ButtonWithData";
+import * as utils from "./utils";
 
 describe("<Comment /> tests", () => {
   const comment = {
@@ -11,7 +13,7 @@ describe("<Comment /> tests", () => {
     userGroup: "author",
     userPhoto:
       "https://avatars1.githubusercontent.com/u/14073512?s=400&u=a1ed33a855c7feeecafbd39293d97c3cb6291565&v=4", //TODO change image
-    //time: moment(new Date()).subtract(2, "minutes"),
+    time: "moment data",
     message: "message1",
     numberOfReplies: 21,
     numberOfUpvotes: 123,
@@ -21,7 +23,12 @@ describe("<Comment /> tests", () => {
   let wrapper;
 
   beforeEach(() => {
+    sinon.stub(utils, "getTime").withArgs(comment.time).returns("1 minute ago");
     wrapper = shallow(<Comment comment={comment} />);
+  });
+
+  afterEach(() => {
+    sinon.restore();
   });
 
   it("renders user photo", () => {
@@ -36,6 +43,10 @@ describe("<Comment /> tests", () => {
     expect(wrapper.find(".comment__user-group").text()).toEqual(
       comment.userGroup
     );
+  });
+
+  it("renders comment time", () => {
+    expect(wrapper.find(".comment__time").text()).toEqual("1 minute ago");
   });
 
   it("renders message", () => {
