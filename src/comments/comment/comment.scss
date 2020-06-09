@@ -59,13 +59,13 @@
 
   .comment__actions {
     display: flex;
-    opacity: 45%;
+    opacity: 0.45;
     flex-wrap: wrap;
   }
 }
 .comment:hover {
   .comment__actions {
-    opacity: 100%;
+    opacity: 1;
   }
 }
 @media (max-width: 650px) {
