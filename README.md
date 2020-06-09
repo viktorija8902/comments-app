@@ -11,6 +11,10 @@ To run tests:
 
 ### `npm run test`
 
+Deployed on https://vb-comments-app.herokuapp.com/
+
+Design and product screenshots are in the root directory.
+
 # Docs bellow were generated automatically
 
 ## Available Scripts
