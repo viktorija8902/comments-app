@@ -2,8 +2,10 @@
 
 .comment {
   display: flex;
-  border: 3px solid #efefef;
-  padding: 35px 20px 20px;
+  border: 2px solid #efefef;
+  padding: 35px 25px 20px;
+  border-left-style: none;
+  border-right-style: none;
 }
 
 .comment__left {
@@ -51,5 +53,19 @@
   .comment__message {
     width: 100%;
     margin: 10px 0 5px;
+  }
+
+  .comment__actions {
+    display: flex;
+  }
+}
+
+@media (max-width: 650px) {
+  .comment {
+    display: block;
+    padding: 15px 0;
+    .comment__left {
+      width: 25%;
+    }
   }
 }
