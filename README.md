@@ -1,13 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-You will need node and npm/yarn to run this app.
+You will need node and npm to run this app.
 Clone the repo, then run:
 
 ### `npm install`
 
 ### `npm run start`
-
-You can also use yarn as mentioned in auto generated docs.
 
 To run tests:
 
